@@ -7,3 +7,7 @@ https://www.youtube.com/watch?v=fPXDY3GVLQo
 ## 2024_01_10_上午
 
 https://youtube.com/live/c1ar-l_pBi0
+
+## 2024_01_12_下午
+
+https://www.youtube.com/watch?v=R9bT-sF7mso
