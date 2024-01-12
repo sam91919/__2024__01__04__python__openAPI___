@@ -1,2 +1,3 @@
 def BMI(weight_box):
-    
+  bmi = weight_box / (height_box/100) ** 2
+  return bmi  
