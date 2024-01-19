@@ -1,4 +1,3 @@
 fastapi
 redis
 uvicorn[standard]
-python
