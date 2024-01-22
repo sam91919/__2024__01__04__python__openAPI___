@@ -13,7 +13,7 @@ app = FastAPI()
 def read_root():
     return {"Hello": "World"}
 
-@app.get("/item/{item_id}")
+@app.get("/items/{item_id}")
 async def get_item(item_id):
     print(f"使用者輸入了:{item_id}")
     return{"item_id":item_id}
