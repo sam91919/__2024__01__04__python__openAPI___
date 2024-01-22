@@ -21,5 +21,5 @@ def counter(c:int):
 
 
 @app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
+def read_item(item_id: int, q:str | None = None):
     return {"item_id": item_id}
