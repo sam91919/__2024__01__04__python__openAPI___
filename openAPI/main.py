@@ -20,7 +20,7 @@ def counter(c:int):
     return{"Counter": counter}
 
 
-@app.get("/items/{item_id}")
+@app.get("/pico_w/{date}")
 async def read_item(date:str ,address:str,celsius:float,light:float):
     print(f"日期:{date}")
     print(f"位置:{address}")
