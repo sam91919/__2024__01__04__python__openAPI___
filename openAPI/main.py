@@ -22,4 +22,8 @@ def counter(c:int):
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q:str | None = None):
+    print(f"日期:{date}")
+    print(f"位置:{address}")
+    print(f"攝氏:{celsius}")
+    print(f"光線:{light}")
     return {"item_id": item_id}
