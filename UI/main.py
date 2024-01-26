@@ -3,8 +3,8 @@ import pandas as pd
 import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 
-url = 'https://openapi-test-6vnu.onrender.com/pico_w/?count=10'
-#自動reload頁面每2秒
+url = 'https://openapi-test-lo0a.onrender.com/pico_w/?count=10'
+#自動reload頁面每10秒
 st_autorefresh(interval=10000, limit=100, key="fizzbuzzcounter")
 
 r = requests.get(url=url)
@@ -14,6 +14,7 @@ if r.status_code == 200:
     data = r.json()
 
 dataFrame = pd.DataFrame(data)
+
 st.header("學院養雞場")
 st.divider()
 st.caption("溫度-光線表表😍")
@@ -24,8 +25,3 @@ st.line_chart(dataFrame,x='date',y='light')
 st.divider()
 st.caption("溫度")
 st.line_chart(dataFrame,x='date',y='temperature',color='#ff0000')
-dataFrame
-
-
-
-
