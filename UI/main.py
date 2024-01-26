@@ -9,5 +9,9 @@ if r.status_code == 200:
     print("下載成功")
     data = r.json()
 
-print(data)
-pd.DataFrame(data)
+dataFrame = pd.DataFrame(data)
+print(dataFrame)
+
+
+
+
